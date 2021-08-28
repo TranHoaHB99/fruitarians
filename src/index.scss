@@ -1,0 +1,16 @@
+@import "assets/scss/variables/color";
+@import "assets/scss/mixins/responsive";
+
+
+:root {
+  --white-color: #fff;
+  --black-color: #000;
+  --text-color: #333;
+}
+
+h1 {
+  color: $primary-color;
+  @include respond(phone) {
+    color: red;
+  }
+}
